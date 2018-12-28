@@ -1,0 +1,188 @@
+header + * {
+	background: #212121;
+	overflow: hidden;
+}
+header.element {
+	text-align: center;
+	background: #e53935;
+	padding: 10px;
+	color: white;
+	position: relative;
+}
+header #logo {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+}
+header #logo img {
+	height: 44px;
+}
+header #logo #webstore {
+	margin-left: 10px;
+	font-size: 1.2em;
+}
+header #search-container {
+	width: 620px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+header #search {
+	width: 100%;
+	border: 0px none;
+	height: 44px;
+	font-weight: 600;
+	background: rgba(0,0,0,0.4);
+	border-radius: 5px;
+	transition: all 0.5s linear;
+	line-height: 16px;
+	padding: 12px 44px;
+	text-align: center;
+	color: white;
+}
+header #search + i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 12px;
+	opacity: 0;
+	transition: all .3s ease;
+}
+header #search:focus + i {
+	opacity: 1;
+}
+header #search:focus {
+	text-align: left;
+}
+header #profile {
+	display: block;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+header #profile em {
+	color: #2979ff;
+}
+header #profile i {
+	padding: 5px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid white;
+	margin-left: 10px;
+}
+.owl-carousel {
+	padding: 20px;
+	position: relative;
+}
+.owl-carousel .item {
+	background: white;
+	border-radius: 25px;
+	height: 230px;
+	-webkit-box-shadow: 0px 0px 5px 0px #000000;
+-moz-box-shadow: 0px 0px 5px 0px #000000;
+-o-box-shadow: 0px 0px 5px 0px #000000;
+box-shadow: 0px 0px 5px 0px #000000;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
+	background-position: center;
+	background-size: cover;
+}
+#suggestions .owl-nav * {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+	background: white;
+	color: #666;
+}
+#suggestions .owl-stage {
+	padding: 0 0 10px;
+}
+#suggestions .owl-nav > * {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+-webkit-box-shadow: 0px 0px 5px 0px #242424;
+-moz-box-shadow: 0px 0px 5px 0px #242424;
+-o-box-shadow: 0px 0px 5px 0px #242424;
+box-shadow: 0px 0px 5px 0px #242424;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#242424, Direction=NaN, Strength=5);
+	margin: 0 20px;
+}
+.owl-nav .owl-prev { left: -25px; }
+.owl-nav .owl-next { right: -25px; }
+
+#apps {
+	background: white;
+	padding: 20px;
+}
+#apps #categories {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#apps #categories > * {
+	font-weight: 600;
+	padding: 5px 0;
+	margin: 0 5px;
+	border-bottom: 5px solid transparent;
+	cursor: pointer;
+}
+#apps #categories .active {
+	border-color: #0B6CF9;
+}
+#apps #list {
+	padding: 0 10px;
+}
+#apps #list > * {
+	width: 33.33%;
+	padding: 0 10px;
+}
+#apps #list .webapp {
+	height: 80px;
+	margin: 5px 0;
+	border-radius: 5px;
+}
+.webapp img {
+	height: 60px;
+	width: 60px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 3px 0px #5f5f5f;
+-moz-box-shadow: 0px 0px 3px 0px #5f5f5f;
+-o-box-shadow: 0px 0px 3px 0px #5f5f5f;
+box-shadow: 0px 0px 3px 0px #5f5f5f;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#5f5f5f, Direction=NaN, Strength=3);
+	border-radius: 14px;
+}
+.webapp img + * {
+	width: calc(100% - 60px);
+	padding-left: 15px;
+}
+.webapp img + * > * {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+}
+.webapp .rate {
+	margin-right: 3px;
+}
+.webapp .category {
+	opacity: .6;
+	font-size: .8em;
+}
+@media screen and (max-width: 1020px) {
+	#apps #list > * {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 680px) {
+	#apps #list > * {
+		width: 100%;
+	}
+}
