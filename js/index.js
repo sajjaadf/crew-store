@@ -35,7 +35,7 @@ $.getJSON('https://berri-co.me/js.json', function(json){
 		var average = precisionRound(summary / webapp.stars, 1);
 		
 		$('#apps #list').append(
-			'<a href="/crew-store/' + i + '/"><div class="webapp top">\
+			'<a href="#' + i + '/"><div class="webapp top">\
 					<img src="' + webapp.icon  + '" alt="' + webapp.name + '" style="background-color:  ' + webapp.themecolor +'"/><div>\
 						<h4>' + webapp.name + '</h4>\
 						<div class="category">' + webapp.category + '</div>\
